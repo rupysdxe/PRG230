@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #343a40;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .card {
+            display: flex;
+            margin: 10px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            align-items: center;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .card p {
+            margin: 5px 0 0;
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .card img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About Me</a>
+    </div>
+    <div class="container">
+        <div class="card" onclick="navigateTo('event_management.html')">
+            <img src="images/template.png" alt="Event Management System">
+            <div>
+                <h3>Event Management System</h3>
+                <p>This is a project used to track events.</p>
+            </div>
+        </div>
+        <div class="card" onclick="navigateTo('project_management.html')">
+            <img src="images/template.png" alt="Project Management System">
+            <div>
+                <h3>Project Management System</h3>
+                <p>This is a project made to track projects.</p>
+            </div>
+        </div>
+        <div class="card" onclick="navigateTo('fingerprint_attendance.html')">
+            <img src="images/template.png" alt="Fingerprint Attendance System">
+            <div>
+                <h3>Fingerprint Attendance System</h3>
+                <p>This project is intended to replace the attendance management system.</p>
+            </div>
+        </div>
+        <div class="card" onclick="navigateTo('inventory_management.html')">
+            <img src="images/template.png" alt="Inventory Management System">
+            <div>
+                <h3>Inventory Management System</h3>
+                <p>This project helps to manage the inventory of a business.</p>
+            </div>
+        </div>
+        <div class="card" onclick="navigateTo('crm_system.html')">
+            <img src="images/template.png" alt="Customer Relationship Management System">
+            <div>
+                <h3>Customer Relationship Management System</h3>
+                <p>This project is designed to manage a company's interactions with customers.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .card {
+            display: flex;
+            margin: 10px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            align-items: center;
+        }
+        .card img {
+            width: 15%;
+            margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .card img {
+                width: 15%;
+                margin: 20px;
+                padding: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About Me</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images/template.png" alt="Event Management System">
+            <div>
+                <h3>Event Management System</h3>
+                <p>This is a project used to track events.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/template.png" alt="Project Management System">
+            <div>
+                <h3>Project Management System</h3>
+                <p>This is a project made to track projects.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/template.png" alt="Fingerprint Attendance System">
+            <div>
+                <h3>Fingerprint Attendance System</h3>
+                <p>This project is intended to replace the attendance management system.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
