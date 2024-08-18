@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Content styling */
+main {
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    margin: 1rem;
+    max-width: 30%;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social a,
+footer .about a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+footer .social a:hover,
+footer .about a:hover {
+    color: #007bff;
+}
+
+
